@@ -4,12 +4,11 @@
 #   Ensure the SQLite 3 gem is defined in this Gemfile
 #   gem "sqlite3"
 #
-default: &default
+ddefault: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: my_postgres_username
-  password: my_postgres_password
+  username: postgres
   host: localhost
 
 development:
